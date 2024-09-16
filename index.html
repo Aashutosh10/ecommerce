@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Haven - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Include Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header>
+        <h1>Fashion Haven</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>  
+            <a href="cart.html" id="viewCart">View Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <div class="home-content">
+                <div class="home-text">
+                    <h2 id="typed-text">Welcome to Fashion Haven</h2>
+                    <p class="home-description">
+                        Discover the ultimate destination for all your fashion desires at <strong>Fashion Haven</strong>! 
+                        Dive into our meticulously curated collection of chic, trendy, and timeless clothing. 
+                        Whether you're seeking the latest runway styles or classic wardrobe staples, 
+                        we've got something to elevate every outfit. Our exclusive range is designed to make you 
+                        feel not just stylish but truly exceptional. Embrace the elegance and sophistication of our 
+                        premium fabrics, cutting-edge designs, and unrivaled quality. 
+                        Shop with us and redefine your fashion journey with elegance and flair. 
+                        <strong>Fashion Haven</strong> – Where style meets sophistication.
+                    </p>
+                </div>
+                <div class="home-image">
+                    <!-- You can add an additional image or content here if needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize Typed.js for the typing effect
+        document.addEventListener("DOMContentLoaded", function() {
+            var options = {
+                strings: ["Welcome to Fashion Haven"],
+                typeSpeed: 50,
+                backSpeed: 25,
+                backDelay: 1000,
+                startDelay: 500,
+                loop: true
+            };
+            var typed = new Typed('#typed-text', options);
+        });
+    </script>
+</body>
+</html>
